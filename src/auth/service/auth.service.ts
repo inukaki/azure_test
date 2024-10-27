@@ -9,6 +9,7 @@ export class AuthService {
     private readonly clientId = authConfig.credentials.clientID;
     private readonly clientSecret = authConfig.credentials.clientSecret;
     private readonly scope = "https://graph.microsoft.com/.default";
+    // private readonly scope = "https://graph.microsoft.com/User.Read";
 
     constructor(private readonly httpService: HttpService) {}
 
